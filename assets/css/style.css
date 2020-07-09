@@ -1,0 +1,124 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+    padding: 60px 15px 0;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/** --- navbar -- */
+header .navbar {
+    box-shadow: 0 0 7px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 7px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,.1);
+}
+.nav-link { color: #000;}
+.nav-link:hover {color: #5000B8;}
+
+
+/** --- buttons -- */
+.btn {
+    border-radius: 1.25rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #5000B8;
+    border-color: #5000B8;
+}
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 4.3rem;
+}
+
+/** -- misc -- */
+.page-header {
+    padding-top:130px;
+    padding-bottom: 70px;
+    background-color: #5000B8;
+    color: white;
+    animation: colorchange 60s linear 1s infinite;
+    -webkit-animation: colorchange 60s linear 0s infinite alternate;
+}
+@keyframes colorchange
+{
+    0%   {background: #5000b8;}
+    16.66%  {background: #0c2ae8;}
+    33.33%  {background: #e80061;}
+    50% {background: #d10000;}
+    66.66% {background: #62c300;}
+    100% {background: #fa960f;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {background: red; color: cyan;}
+    33%  {background: green; color: magenta;}
+    66%  {background: blue; color: yellow;}
+    100% {background: red; color: cyan;}
+}
+.carousel-caption {
+    bottom: auto;
+    top:20px;
+    left:0;
+    right: auto;
+    max-width: 640px;
+}
+
+#carouselExampleCaptions {
+    /*background: #f5f5f5 url("../img/github-logo.png") center right no-repeat;
+    background-size: contain;*/
+}
+#carouselExampleCaptions .carousel-item {
+    min-height: 640px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#carouselExampleCaptions .carousel-item::-webkit-scrollbar {
+   display: none;
+}
+
+code > pre {
+    color:#e83e8c;
+}
+pre.results {
+    margin-bottom: 0;
+}
+
+#collapseRun .card-body{
+    max-height: 400px;
+    overflow: auto;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #5000B8;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
