@@ -16,6 +16,10 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -118,12 +122,66 @@ php/</pre>
                         </div>
                         <p>Now that your files have been added, we need to "commit" them and typically you want to add a message for the commit explaining briefly what this particular commit is about.</p>
                         <div class="card bg-dark p-1 text-white mb-3">
-                            $ git commit -m "Initial upload"
+                            $ git commit -m "Initial commit"
                         </div>
                         <p>Once your commit has been established, we can now push them to our remote repository using the branch we're currently checked out to.  In this case, our branch is 'master'</p>
                         <div class="card bg-dark p-1 text-white mb-3">
                             $ git push origin master
                         </div>
+                        <div class="alert alert-warning" role="alert">
+                            If you have created your repository with a README file, you'll get an error on your git push.  You'll first need to pull that README into your local branch.  i.e. git pull --allow-unrelated-histories origin master
+                        </div>
+                        <a class="btn btn-secondary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="prev">Previous Step</a>
+                        <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
+                    <div class="carousel-caption d-none d-md-block text-left text-dark">
+                        <h1>Step 6.</h1>
+                        <h5>Fork the repository</h5>
+                        <p>Normally, you'll notice github letting you know that there is a difference between branch across 'forks'.  If this is not your repository, you will need to 'fork' the repository, clone to your local machine, make changes, push your changes to github.</p>
+                        <p>To fork the repository, simply click "Fork" in the upper right corner of github and follow the instructions provided by github.</p>
+                        <p>On your local machine, navigate to a place where you would like to store the files from the github repository and do the following. (assuming you have git installed)</p>
+                        <div class="card bg-dark p-1 text-white mb-3">
+                            $ git clone git@github.com:RoschWeb/thumbstopper.git
+                        </div>
+                        <p>This will download the files from github to your local machine.</p>
+
+                        <a class="btn btn-secondary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="prev">Previous Step</a>
+                        <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
+                    <div class="carousel-caption d-none d-md-block text-left text-dark">
+                        <h1>Step 7.</h1>
+                        <h5>Create a "Pull Request"</h5>
+                        <p>Creating a pull request will allow the owner (or whoever has privileges to your repository) to "review" your code. To create a pull request, simply log onto github, navigate to the repository you wish to create a pull request for.</p>
+
+                        <h5>Create a new branch for a new feature</h5>
+                        <p>On your local machine, create a new branch given that your master branch is in sync with your remote branch.</p>
+                        <div class="card bg-dark p-1 text-white mb-3">
+                            $ git checkout -b newfeature
+                        </div>
+                        <p>This will create a new branch called newfeature. On this branch, any changes you make will show as an untracked file once you make an edit and save.  Once your code is ready for deployment, we need to first add the file(s), then commit the file(s), then push the file(s) for review.</p>
+                        <div class="card bg-dark p-1 text-white mb-3">
+                            <pre class="text-white mb-0">$ git status
+$ git add .
+$ git commit -m "New feature"
+$ git push origin newfeature</pre>
+                        </div>
+                        <p>OR</p>
+                        <div class="card bg-dark p-1 text-white mb-3">
+                            <pre class="text-white mb-0">$ git status
+$ git add /path/to/changed/file
+$ git commit -m "New feature"
+$ git push origin newfeature</pre>
+                        </div>
+
                         <a class="btn btn-secondary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="prev">Previous Step</a>
                         <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
                     </div>
@@ -131,17 +189,41 @@ php/</pre>
 
 
 
+                <div class="carousel-item">
+                    <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
+                    <div class="carousel-caption d-none d-md-block text-left text-dark">
+                        <h1>Step 8.</h1>
+                        <h5>Submit a "Pull Request"</h5>
+                        <p>If github is not showing there is a change as in a pull request to be made, that's ok.  We can still create a pull request by clicking the "New pull request" button in github.</p>
+                        <p>If you do not see your base branch, you can click the "compare across forks" link and then choose which repository and branch you would like to compare and merge.</p>
+                        <p>You'll notice github will show you the differences between what is on the branch your wanting to merge to and what your are actually trying to merge.</p>
+                        <p>If everything checks out, click the "Create pull request" button.</p>
+                        <p>Once you have submitted your pull request, given there were no merge conflicts, your code is now ready to be reviewed.</p>
+                        <a class="btn btn-secondary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="prev">Previous Step</a>
+                        <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
+                    <div class="carousel-caption d-none d-md-block text-left text-dark">
+                        <h1>Step 9.</h1>
+                        <h5>Merge the new Feature</h5>
+                        <p>Assuming the new feature code has passed a review, it is now ready to be merged.</p>
+                        <p>Using the github interface, you can now click the "Merge pull request" button.</p>
+                        <p>This will merge any new code approved by the reviewer.</p>
+                        <p>This does not mean the new code has been deployed however.</p>
+                        <p>At this point, you will have to pull the new code into your production branch located on your production server for example.</p>
+                        <div class="card bg-dark p-1 text-white mb-3">
+                            <pre class="text-white mb-0">$ git pull</pre>
+                        </div>
+                        <a class="btn btn-secondary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="prev">Previous Step</a>
+                    </div>
+                </div>
+
 
                 <!-- end of items  -->
             </div>
-            <a class="carousel-control-prev text-dark" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
 
         </div>
