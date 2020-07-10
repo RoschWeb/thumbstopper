@@ -3,6 +3,17 @@ $('.multi-collapse').on('show.bs.collapse', function () {
     $('.multi-collapse').collapse('hide');
 });
 
+$(function(){
+    let current = location.pathname;
+    $('a.nav-link').each(function(){
+        let $this = $(this);
+        // if the current path is like this link, make it active
+        if ($this.attr('href').indexOf(current) !== -1) {
+            $this.addClass('active');
+        }
+    })
+})
+
 // Vue shizz
 if(window.location.href.indexOf('task-5') > -1){
     new Vue({

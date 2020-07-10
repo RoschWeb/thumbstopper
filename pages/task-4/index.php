@@ -9,18 +9,6 @@
     <main role="main" class="flex-shrink-0 bg-light">
         <div class="container pt-0">
             <div id="carouselExampleCaptions" class="carousel slide bg-light" data-keyboard="true" data-interval="false" >
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
-            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
@@ -110,7 +98,6 @@ php/</pre>
                         <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
                     </div>
                 </div>
-
                 <div class="carousel-item">
                     <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
                     <div class="carousel-caption d-none d-md-block text-left text-dark">
@@ -135,7 +122,6 @@ php/</pre>
                         <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
                     </div>
                 </div>
-
                 <div class="carousel-item">
                     <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
                     <div class="carousel-caption d-none d-md-block text-left text-dark">
@@ -153,8 +139,6 @@ php/</pre>
                         <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
                     </div>
                 </div>
-
-
                 <div class="carousel-item">
                     <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
                     <div class="carousel-caption d-none d-md-block text-left text-dark">
@@ -186,9 +170,6 @@ $ git push origin newfeature</pre>
                         <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
                     </div>
                 </div>
-
-
-
                 <div class="carousel-item">
                     <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
                     <div class="carousel-caption d-none d-md-block text-left text-dark">
@@ -203,7 +184,6 @@ $ git push origin newfeature</pre>
                         <a class="btn btn-primary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="next">Next Step</a>
                     </div>
                 </div>
-
                 <div class="carousel-item">
                     <img src="../../assets/img/github-logo.png" class="d-block ml-auto" alt="Aint 'ee cute?">
                     <div class="carousel-caption d-none d-md-block text-left text-dark">
@@ -220,8 +200,6 @@ $ git push origin newfeature</pre>
                         <a class="btn btn-secondary btn-lg"" href="#carouselExampleCaptions" role="button" data-slide="prev">Previous Step</a>
                     </div>
                 </div>
-
-
                 <!-- end of items  -->
             </div>
         </div>

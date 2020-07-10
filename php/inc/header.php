@@ -28,7 +28,7 @@
             <img src="/assets/img/ts-full-logo.svg" width="auto" height="30" alt="ThumbStopper Quiz">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-bars mt-2"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">

@@ -42,7 +42,9 @@ header .navbar {
     -webkit-box-shadow: 0 0 7px rgba(0,0,0,.1);
 }
 .nav-link { color: #000;}
-.nav-link:hover {color: #5000B8;}
+.nav-link:hover, .nav-link.active {
+    color: #5000B8;
+}
 
 
 /** --- buttons -- */
@@ -149,4 +151,15 @@ pre.results {
     .cover-container h1 {
         font-size: 37px;
     }
+    #carouselExampleCaptions {
+    }
+
+    .carousel-item img.d-block {
+        display: none !important;
+    }
+
+    .carousel-item .carousel-caption {
+        display: block !important;
+    }
+
 }
