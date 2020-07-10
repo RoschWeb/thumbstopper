@@ -9,8 +9,8 @@
     <link rel="icon" href="/assets/img/favicon_me.ico">
     <title>ThumbStopper Quiz</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
     <link href="//fonts.googleapis.com/css2?family=Muli:wght@900&display=swap" rel="stylesheet">
+    <link href="/assets/css/all.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vuex"></script>
 
@@ -28,7 +28,7 @@
             <img src="/assets/img/ts-full-logo.svg" width="auto" height="30" alt="ThumbStopper Quiz">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
